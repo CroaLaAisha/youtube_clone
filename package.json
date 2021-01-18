@@ -1,0 +1,11 @@
+{
+  "name": "youtube_clone",
+  "version": "1.0.0",
+  "description": "Cloning Youtube width VanillaJS NodeJS",
+  "main": "index.js",
+  "author": "CroaLaAisha",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
