@@ -1,3 +1,4 @@
+import db from "./db";
 import app from "./app";
 
 const PORT = 4000;
