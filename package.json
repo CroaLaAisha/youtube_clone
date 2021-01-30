@@ -8,6 +8,7 @@
   "dependencies": {
     "@babel/core": "^7.12.10",
     "@babel/node": "^7.12.10",
+    "@babel/polyfill": "^7.12.1",
     "babel-loader": "^8.2.2",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
@@ -46,8 +47,6 @@
     "webpack-cli": "^4.4.0"
   },
   "browserslist": [
-    "defaults",
-    "not IE 11",
-    "maintained node versions"
+    "defaults"
   ]
 }

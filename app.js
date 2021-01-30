@@ -14,14 +14,14 @@ const app = express();
 
 // Global MiddleWares
 app.use(helmet({ contentSecurityPolicy: false }));
-app.use(function (req, res, next) {
-  res.setHeader("Content-Security-Policy", "script-src 'self' https://archive.org");
-  // res.setHeader(
-  //   "Content-Security-Policy",
-  //   "script-src 'self' 'unsafe-eval'; object-src 'self'"
-  // );
-  return next();
-});
+// app.use(function (req, res, next) {
+//   res.setHeader("Content-Security-Policy", "script-src 'self'  https://archive.org");
+//   // res.setHeader(
+//   //   "Content-Security-Policy",
+//   //   "script-src 'self’ ‘unsafe-eval'; object-src 'self'"
+//   // );
+//   return next();
+// });
 app.set("view engine", "pug");
 app.use("/uploads", express.static("uploads"));
 app.use("/static", express.static("static"));
