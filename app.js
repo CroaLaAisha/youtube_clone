@@ -13,7 +13,6 @@ import routes from "./routes";
 const app = express();
 
 // Global MiddleWares
-app.use(helmet({ contentSecurityPolicy: false }));
 // app.use(function (req, res, next) {
 //   res.setHeader("Content-Security-Policy", "script-src 'self'  https://archive.org");
 //   // res.setHeader(
@@ -22,6 +21,7 @@ app.use(helmet({ contentSecurityPolicy: false }));
 //   // );
 //   return next();
 // });
+app.use(helmet({ contentSecurityPolicy: false }));
 app.set("view engine", "pug");
 app.use("/uploads", express.static("uploads"));
 app.use("/static", express.static("static"));
