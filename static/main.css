@@ -423,6 +423,7 @@ input[type="submit"] {
   .videoPlayer:hover .videoPlayer__controls {
     opacity: 1; }
   .videoPlayer video {
+    width: 100%;
     max-width: 100%; }
   .videoPlayer .videoPlayer__controls {
     opacity: 0;
@@ -516,9 +517,6 @@ input[type="submit"] {
     margin-top: 25px; }
     .video-detail__container .video__comments .video__comment-number {
       font-size: 16px; }
-  .video-detail__container .video__player,
-  .video-detail__container video {
-    width: 800px; }
 
 .user-profile {
   width: 100%;
